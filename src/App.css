@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+  background-image: url('./bg.jpg'); /* Replace with your image path */
+    background-size: cover; /* Adjust as needed (cover, contain, auto) */
+    background-position: center; 
+    height: 800px;
+}
+

@@ -1,0 +1,53 @@
+.frontend-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);  /* Adjust opacity for desired transparency */
+    backdrop-filter: blur(10px);  /* Blur effect for glass-like appearance */
+    border: none;  /* Remove border for a cleaner look */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);  /* Optional: Subtle shadow for depth */
+    position: absolute;  /* Position absolutely for centering */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* Center the element horizontally and vertically */
+    width: fit-content;
+}
+.frontend-container {
+    /* Existing styles */
+      /* Adjust width to fit content or set a desired width */
+  }
+  
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button.search-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.search-button:hover {
+    background-color: #034286;
+}
