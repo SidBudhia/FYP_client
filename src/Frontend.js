@@ -18,9 +18,9 @@ const Frontend = () => {
     console.log("Search button clicked");
     // You can send these input values to the backend for prediction
     const data = {
-      num1: infillDensity,
+      num1: layerThickness,
       num2: rasterAngle,
-      num3: layerThickness,
+      num3: infillDensity,
     };
     try {
       const config = {
@@ -47,11 +47,11 @@ const Frontend = () => {
       <h2>Predict tensile strength of your specimen</h2>
       <div className="input-group">
         <label>
-          Infill Density (in %):
+          Layer Thickness:
           <input
             type="number"
-            value={infillDensity}
-            onChange={(e) => setInfillDensity(e.target.value)}
+            value={layerThickness}
+            onChange={(e) => setLayerThickness(e.target.value)}
           />
         </label>
       </div>
@@ -67,11 +67,11 @@ const Frontend = () => {
       </div>
       <div className="input-group">
         <label>
-          Layer Thickness:
+          Infill Density (in %):
           <input
             type="number"
-            value={layerThickness}
-            onChange={(e) => setLayerThickness(e.target.value)}
+            value={infillDensity}
+            onChange={(e) => setInfillDensity(e.target.value)}
           />
         </label>
       </div>
