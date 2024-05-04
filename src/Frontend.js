@@ -29,7 +29,7 @@ const Frontend = () => {
         },
       };
 
-      const resp = await axios.post(`${server}`, data, config);
+      const resp = await axios.post(`${server}/predict`, data, config);
       console.log("resp", resp);
 
       const result = resp.data.result;
