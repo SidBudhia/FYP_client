@@ -37,7 +37,17 @@ select {
     box-sizing: border-box;
 }
 
-button.search-button {
+.search-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.search-button.active {
     width: 100%;
     padding: 10px;
     border: none;
@@ -46,8 +56,8 @@ button.search-button {
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
+  }
 
-button.search-button:hover {
+.search-button.active:hover {
     background-color: #034286;
 }
